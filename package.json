@@ -15,9 +15,15 @@
     "build:backend": "cd backend && npm run build",
     "build:frontend": "cd frontend && npm run build",
     "seed": "cd backend && npm run seed",
-    "test": "cd backend && npm test"
+    "test": "cd backend && npm test",
+    "start": "cd backend && npm start",
+    "start:backend": "cd backend && npm start"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
+  },
+  "overrides": {
+    "@types/express": "^4.17.21",
+    "@types/express-serve-static-core": "^4.19.6"
   }
 }
